@@ -21,6 +21,9 @@
   <ItemGroup>
     <Text Include="тз.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CaTLib.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{AEA8855E-E6E9-418B-AF9F-6DAC36595F76}</ProjectGuid>
     <RootNamespace>CaTLib</RootNamespace>
