@@ -24,6 +24,9 @@
   <ItemGroup>
     <ClInclude Include="CaTLib.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CaTLib.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{AEA8855E-E6E9-418B-AF9F-6DAC36595F76}</ProjectGuid>
     <RootNamespace>CaTLib</RootNamespace>

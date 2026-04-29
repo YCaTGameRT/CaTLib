@@ -9,12 +9,13 @@
 
 class CaTLib {
 public:
+	CaTLib(std::string title);
 	void Print();
 	void AddElement(int num, std::string desc);
+	int FromUser();
 private:
 	std::string title;
-	std::map<int, std::string> element;
-	std::vector<std::map<int, std::string>> allElements;
+	std::map<int, std::string> elements;
 };
 
 #endif
