@@ -6,8 +6,8 @@ CaTLib::CaTLib(std::string title) {
 
 void CaTLib::Print() {
 	printf("%s\n", title.c_str());
-	for (auto i : elements) {
-		printf("%s\n", i);
+	for (auto& i : elements) {
+		std::cout << i.first << ". " << i.second << "\n";
 	}
 }
 void CaTLib::AddElement(int num, std::string desc) {
