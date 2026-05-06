@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <locale.h>
-#include <vector>
 #include <string>
 #include <map>
 

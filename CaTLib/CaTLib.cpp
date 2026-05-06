@@ -5,7 +5,7 @@ CaTLib::CaTLib(std::string title) {
 }
 
 void CaTLib::Print() {
-	printf("%s\n", title);
+	printf("%s\n", title.c_str());
 	for (auto i : elements) {
 		printf("%s\n", i);
 	}
@@ -14,6 +14,7 @@ void CaTLib::AddElement(int num, std::string desc) {
 	elements[num] = desc;
 }
 int CaTLib::FromUser() {
+	int choose;
 	printf("Введите номер действия\n>>: ");
-	return scanf("%d");
+	return scanf_s("%d", &choose);
 }
