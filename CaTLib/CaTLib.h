@@ -9,10 +9,15 @@
 
 class CaTLib {
 public:
+	CaTLib();
 	CaTLib(std::string title);
+
 	void Print();
 	void AddElement(int num, std::string desc);
 	int FromUser();
+
+	std::string GetTitle();
+	void SetTitle(std::string title);
 private:
 	std::string title;
 	std::map<int, std::string> elements;

@@ -1,5 +1,8 @@
 #include "CaTLib.h"
 
+CaTLib::CaTLib() {
+	title = "";
+}
 CaTLib::CaTLib(std::string title) {
 	this->title = title;
 }
@@ -17,4 +20,11 @@ int CaTLib::FromUser() {
 	int choose;
 	printf("Введите номер действия\n>>: ");
 	return scanf_s("%d", &choose);
+}
+
+std::string CaTLib::GetTitle() {
+	return title;
+}
+void CaTLib::SetTitle(std::string title) {
+	this->title = title;
 }

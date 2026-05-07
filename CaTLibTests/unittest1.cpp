@@ -10,6 +10,7 @@ namespace CaTLibTests {
 		TEST_METHOD(ConstructorTest) {
 			// TODO: –азместите здесь код своего теста
 			CaTLib lib("тестирование");
+			Assert::IsTrue(lib)
 		}
 		TEST_METHOD(TestMethod2) {
 			// TODO: –азместите здесь код своего теста
