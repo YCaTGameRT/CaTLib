@@ -7,13 +7,15 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 namespace CaTLibTests {		
 	TEST_CLASS(UnitTest1) {
 	public:
+		TEST_METHOD(VoidConstructorTest) {
+			CaTLib lib;
+			Assert::IsTrue(lib.GetTitle == "");
+		}
 		TEST_METHOD(ConstructorTest) {
-			// TODO: –азместите здесь код своего теста
-			CaTLib lib("тестирование");
-			Assert::IsTrue(lib)
+			CaTLib lib("тест");
+			Assert::IsTrue(lib.GetTitle() != "");
 		}
-		TEST_METHOD(TestMethod2) {
-			// TODO: –азместите здесь код своего теста
-		}
+
+
 	};
 }
