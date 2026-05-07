@@ -28,6 +28,9 @@
     <ClCompile Include="CaTLib.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="диаграмма классов.jpg" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{AEA8855E-E6E9-418B-AF9F-6DAC36595F76}</ProjectGuid>
     <RootNamespace>CaTLib</RootNamespace>
