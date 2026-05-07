@@ -15,5 +15,11 @@ namespace CaTLibTest26 {
 			CaTLib lib("тест");
 			Assert::IsTrue(lib.GetTitle() != "");
 		}
+
+		TEST_METHOD(GetTest) {
+			CaTLib lib("тест");
+			lib.AddElement(1, "1");
+			//Assert::IsTrue(lib.);
+		}
 	};
 }
