@@ -18,6 +18,7 @@ public:
 
 	std::string GetTitle();
 	void SetTitle(std::string title);
+	std::map<int, std::string> GetElements();
 private:
 	std::string title;
 	std::map<int, std::string> elements;

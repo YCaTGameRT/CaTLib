@@ -28,3 +28,6 @@ std::string CaTLib::GetTitle() {
 void CaTLib::SetTitle(std::string title) {
 	this->title = title;
 }
+std::map<int, std::string> CaTLib::GetElements() {
+	return elements;
+}
