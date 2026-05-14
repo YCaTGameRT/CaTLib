@@ -14,5 +14,7 @@ int main() {
 	menu.RemElementSec(2, "ыпаыа");
 	menu.RemElementSec(1, "Сложение");
 	menu.Print();
+	menu.AddElement(1, "Сложение");
+	menu.SearchToTerm(1);
 	return 0;
 }

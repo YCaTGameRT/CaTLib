@@ -31,11 +31,34 @@ void CaTLib::RemElementSec(int num, std::string desc) {
 		elements.erase(num);
 	}
 	else {
-		printf("Неверно указан элемент %d со значением \"%s\" или его не существует\n", num, desc.c_str());
+		this->SearchErr(num, desc);
 	}
 }
 void CaTLib::FullClear() {
 	elements.clear();
+}
+std::string CaTLib::Search(int num) {
+	if (!elements[num].empty()) {
+		return elements[num];
+	}
+	else {
+		this->SearchErr(num);
+	}
+}
+void CaTLib::SearchToTerm(int num) {
+	if (!elements[num].empty()) {
+		printf("Под номером %d найден элемент \"%s\"\n", num, this->Search(num).c_str());
+	}
+	else {
+		this->SearchErr(num);
+	}
+	
+}
+void CaTLib::SearchErr(int num) {
+	printf("Неверно указан элемент %d или его не существует\n", num);
+}
+void CaTLib::SearchErr(int num, std::string desc) {
+	printf("Неверно указан элемент %d со значением \"%s\" или его не существует\n", num, desc.c_str());
 }
 
 std::string CaTLib::GetTitle() {
