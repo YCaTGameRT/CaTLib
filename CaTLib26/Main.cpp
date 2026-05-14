@@ -8,6 +8,5 @@ int main() {
 	menu.AddElement(2, "Вычитание");
 	menu.Print();
 	choose = menu.FromUser();
-	system("pause");
 	return 0;
 }
