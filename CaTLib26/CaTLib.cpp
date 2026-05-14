@@ -31,7 +31,7 @@ void CaTLib::RemElementSec(int num, std::string desc) {
 		elements.erase(num);
 	}
 	else {
-		printf("Неверно указан элемент или его не существует\n");
+		printf("Неверно указан элемент %d со значением \"%s\" или его не существует\n", num, desc.c_str());
 	}
 }
 void CaTLib::FullClear() {

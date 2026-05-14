@@ -10,5 +10,9 @@ int main() {
 	menu.Print();
 	menu.FullClear();
 	menu.Print();
+	menu.AddElement(1, "Сложение");
+	menu.RemElementSec(2, "ыпаыа");
+	menu.RemElementSec(1, "Сложение");
+	menu.Print();
 	return 0;
 }
