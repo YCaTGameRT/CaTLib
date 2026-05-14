@@ -18,13 +18,13 @@ public:
 	void RemoveElement(int num);
 	void RemElementSec(int num, std::string desc);
 	void FullClear();
+	std::string Search(int num);
 	void SearchToTerm(int num);
 
 	std::string GetTitle();
 	void SetTitle(std::string title);
 	std::map<int, std::string> GetElements();
 private:
-	std::string Search(int num);
 	void SearchErr(int num);
 	void SearchErr(int num, std::string desc);
 

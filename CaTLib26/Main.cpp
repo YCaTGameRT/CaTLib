@@ -16,5 +16,6 @@ int main() {
 	menu.Print();
 	menu.AddElement(1, "Сложение");
 	menu.SearchToTerm(1);
+	menu.SearchToTerm(2);
 	return 0;
 }

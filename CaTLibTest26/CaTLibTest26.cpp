@@ -50,5 +50,14 @@ namespace CaTLibTest26 {
 			lib.FullClear();
 			Assert::IsTrue(lib.GetElements().empty());
 		}
+		TEST_METHOD(SearchTest) {
+			CaTLib lib("тест");
+			lib.AddElement(1, "ку");
+			Assert::IsTrue(lib.Search(1) == "ку");
+		}
+		/*TEST_METHOD(SearchErrTest) {
+			CaTLib lib("тест");
+			Assert::IsTrue(lib.Search(1) == "Неверно указан элемент 1 или его не существует\n");
+		}*/
 	};
 }
