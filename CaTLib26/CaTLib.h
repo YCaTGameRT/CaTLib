@@ -15,6 +15,8 @@ public:
 	void Print();
 	void AddElement(int num, std::string desc);
 	int FromUser();
+	void RemoveElement(int num);
+	void RemElementSec(int num, std::string desc);
 
 	std::string GetTitle();
 	void SetTitle(std::string title);

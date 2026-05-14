@@ -21,6 +21,16 @@ int CaTLib::FromUser() {
 	printf("Введите номер действия\n>>: ");
 	return scanf_s("%d", &choose);
 }
+void CaTLib::RemoveElement(int num) {
+	elements.erase(num);
+}
+void CaTLib::RemElementSec(int num, std::string desc) {
+	std::map<int, std::string> tmp;
+	tmp[num] = desc;
+	if (elements == tmp) {
+		elements.erase(num);
+	}
+}
 
 std::string CaTLib::GetTitle() {
 	return title;

@@ -8,6 +8,10 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 namespace CaTLibTest26 {
 	TEST_CLASS(CaTLibTest26) {
 	public:
+		TEST_METHOD(TitleTest) {
+			CaTLib lib("тест");
+			Assert::IsTrue(lib.GetTitle() == "тест");
+		}
 		TEST_METHOD(PrintTest) {
 			CaTLib lib("тест");
 			std::system("../x64/Debug/CaTLib26.exe > print.txt");
