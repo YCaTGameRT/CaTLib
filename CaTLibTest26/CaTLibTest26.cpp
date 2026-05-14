@@ -18,7 +18,7 @@ namespace CaTLibTest26 {
 			lib.AddElement(1, "ку");
 			Assert::IsTrue(!lib.GetElements().empty());
 		}
-		TEST_METHOD(AddedIsTrue) {
+		TEST_METHOD(AddedValueIsTrue) {
 			CaTLib lib("тест");
 			lib.AddElement(1, "ку");
 			Assert::IsTrue(lib.GetElements()[1] == "ку");
