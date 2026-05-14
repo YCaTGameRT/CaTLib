@@ -30,6 +30,9 @@ void CaTLib::RemElementSec(int num, std::string desc) {
 	if (elements == tmp) {
 		elements.erase(num);
 	}
+	else {
+		printf("Неверно указан элемент или его не существует\n");
+	}
 }
 void CaTLib::FullClear() {
 	elements.clear();
