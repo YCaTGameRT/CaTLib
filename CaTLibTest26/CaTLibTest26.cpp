@@ -39,5 +39,11 @@ namespace CaTLibTest26 {
 			lib.RemElementSec(1, "ку");
 			Assert::IsTrue(lib.GetElements().empty());
 		}
+		TEST_METHOD(ClearTest) {
+			CaTLib lib("тест");
+			lib.AddElement(1, "ку");
+			lib.FullClear();
+			Assert::IsTrue(lib.GetElements().empty());
+		}
 	};
 }

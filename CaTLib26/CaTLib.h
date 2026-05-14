@@ -17,6 +17,7 @@ public:
 	int FromUser();
 	void RemoveElement(int num);
 	void RemElementSec(int num, std::string desc);
+	void FullClear();
 
 	std::string GetTitle();
 	void SetTitle(std::string title);

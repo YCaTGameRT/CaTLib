@@ -31,6 +31,9 @@ void CaTLib::RemElementSec(int num, std::string desc) {
 		elements.erase(num);
 	}
 }
+void CaTLib::FullClear() {
+	elements.clear();
+}
 
 std::string CaTLib::GetTitle() {
 	return title;
